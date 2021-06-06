@@ -1,17 +1,20 @@
 @charset "utf-8";
 @import "common";
-.nav{
-    height: 60px;
+
+.nav {
+    // height: 60px;
     position: relative;
 }
-.nav_logo{  
+
+.nav_logo {
     margin-right: 115px;
     margin-top: 10px;
     float: left;
 }
-.nav_nav{
-    ul{
-        li{
+
+.nav_nav {
+    ul {
+        li {
             float: left;
             width: 60px;
             height: 65px;
@@ -22,14 +25,15 @@
         }
     }
 }
-.nav_search{
+
+.nav_search {
     height: 47px;
     padding-right: 80px;
     float: right;
     padding-top: 15px;
     position: relative;
 
-    input{
+    input {
         width: 167px;
         height: 28px;
         border-style: solid none solid solid;
@@ -37,7 +41,8 @@
         border-radius: 3px 0 0 3px;
         padding: 3;
     }
-    a{
+
+    a {
         width: 80px;
         height: 32px;
         line-height: 32px;
@@ -51,26 +56,29 @@
 }
 
 // 轮播
-.lunbo{
+.lunbo {
     padding: 10px 0;
     position: relative;
-    .lunbo_nav{
+
+    .lunbo_nav {
         width: 220px;
         height: 360px;
         background-color: #444;
         opacity: 40%;
         position: absolute;
         top: 10px;
-        ul{
-            li{
+
+        >ul {
+            >li {
                 height: 60px;
                 padding: 20px 0;
                 box-sizing: border-box;
-                &:first-child{
+
+                &:first-child {
                     margin-top: 30px;
                 }
 
-                i{
+                i {
                     display: inline-block;
                     width: 20px;
                     height: 20px;
@@ -80,9 +88,296 @@
                     font-size: 18px;
                     margin: 0 10px 0 20px;
                 }
-                span{
+
+                span {
                     font-size: 18px;
                     color: #fff;
+                }
+            }
+        }
+    }
+}
+
+.lunbo_nav {
+    li {
+        &:hover {
+            .fu_nav {
+                display: block;
+                transition: all 2s ease .5s;
+            }
+        }
+        &:hover.current{
+                background-color: #ff6767;
+        }
+
+        .fu_nav {
+            display: none;
+            width: 490px;
+            height: 360px;
+            position: absolute;
+            left: 220px;
+            top: 0;
+            background-color: #fff;
+            font-size: 18px;
+            padding: 22px 50px 0;
+            box-sizing: border-box;
+
+            li {
+                float: left;
+                width: 130px;
+                height: 70px;
+                margin: 0 0 10px;
+                text-align: center;
+            }
+        }
+
+    }
+}
+
+
+// 讨论区
+.tl {
+    // height: 120px;
+
+    .dis {
+        background-color: #eeeeee;
+        margin: 10px 0 0;
+        padding: 15px 0;
+        box-sizing: border-box;
+    }
+}
+
+.tl_content {
+    width: 303px;
+    margin-left: 21px;
+    float: left;
+
+    .title {
+
+        font-size: 20px;
+        line-height: 24px;
+
+        a {
+            color: #333333;
+        }
+    }
+
+    .content {
+        color: #333333;
+        font-size: 12px;
+
+        span {
+            color: #999999;
+        }
+    }
+}
+
+// 咨询区
+.zx {
+    height: 386px;
+    margin: 20px 0;
+
+    .zx_content {
+        width: 310px;
+        float: left;
+        margin-right: 30px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        img {
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .title {
+            border-bottom: 1px solid #ccc;
+
+            .left {
+                font-size: 20px;
+                display: inline-block;
+
+                a {
+                    font-size: 20px;
+                    line-height: 30px;
+                    color: #333333;
+                }
+            }
+
+            .right {
+                font-size: 16px;
+                float: right;
+
+                a {
+                    line-height: 30px;
+                    color: #333333;
+                }
+
+            }
+        }
+
+        .zx_list {
+            ul {
+                li {
+                    line-height: 26px;
+                    padding: 10px 0 0;
+                    box-sizing: border-box;
+                }
+            }
+        }
+    }
+}
+
+// 菜谱区
+.cp {
+    height: 1571px;
+    .cp_content {
+        height: 37px;
+
+        .title {
+            border-bottom: 1px solid #ccc;
+
+            .left {
+                width: 389px;
+                font-size: 20px;
+                display: inline-block;
+
+                a {
+                    margin-right: 20px;
+                    line-height: 30px;
+                    color: #333333;
+                }
+            }
+
+            .right {
+                font-size: 16px;
+                float: right;
+
+                a {
+                    margin-right: 20px;
+                    line-height: 30px;
+                    color: #333333;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+.cp {
+    .cp_last {
+        ul {
+            li {
+                float: left;
+                width: 230px;
+                height: 305px;
+                margin: 0 23px 0 0;
+                text-align: center;
+                overflow: hidden;
+
+                &:nth-child(4n) {
+                    margin-right: 0;
+                }
+                &:hover{
+                    img{
+                        transform: scale(1.1);
+                    }
+                }
+
+                img {
+                    width: 100%;
+                    transition: all 1s ease 0s;
+                }
+
+                h3 {
+                    line-height: 31px;
+                    font-size: 18px;
+                    padding: 8px 0 2px;
+                    box-sizing: border-box;
+                }
+
+                p {
+                    font-size: 12px;
+                    color: #ccc;
+                }
+            }
+        }
+    }
+}
+
+
+// 时令
+.sl {
+    margin-top: 47px;
+    .sl_content {
+        height: 37px;
+
+        .title {
+            border-bottom: 1px solid #ccc;
+
+            .left {
+                width: 389px;
+                font-size: 20px;
+                display: inline-block;
+
+                a {
+                    margin-right: 20px;
+                    line-height: 30px;
+                    color: #333333;
+                }
+            }
+
+            .right {
+                font-size: 16px;
+                float: right;
+
+                a {
+                    margin-right: 20px;
+                    line-height: 30px;
+                    color: #333333;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+.sl{
+    .sl_last{
+        ul{
+            li{
+                float: left;
+                width: 126px;
+                height: 175px;
+                margin: 10px 18px 0 0;
+                text-align: center;
+                &:nth-child(7n) {
+                    margin-right: 0;
+                }
+
+                img {
+                    width: 100%;
+                }
+
+                h3 {
+                    line-height: 31px;
+                    font-size: 18px;
+                    padding: 8px 0 2px;
+                    box-sizing: border-box;
+                }
+
+                p {
+                    font-size: 12px;
+                    color: #ccc;
                 }
             }
         }
