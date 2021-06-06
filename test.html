@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<div class=" content">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <style>
+        span{
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bigbox">
+        <div class="list">
+            <em>点击小图标<img src="小图标1.jpg" /></em>
+            <span>我是显示的内容1</span>
+        </div>
+        
+    </div>
+
+    <div class="bigbox">
+        <div class="list">
+            <em>点击小图标<img src="小图标2.jpg" /></em>
+            <span>我是显示的内容2</span>
+        </div>
+        
+    </div>
+
+    <div class="bigbox">
+        <div class="list">
+            <em>点击小图标<img src="小图标3.jpg" /></em>
+            <span>我是显示的内容3</span>
+        </div>
+        
+    </div>
+    <script>
+        $(".bigbox img").hover(function () {
+            $(this).parent().next().show()
+        }, function () {
+            return false
+        })
+
+        $(".bigbox span").hover(function () {
+            return false
+        }, function () {
+            $(this).hide()
+        })
+    </script>
+</body>
+
+</html>

@@ -64,7 +64,7 @@
         width: 220px;
         height: 360px;
         background-color: #444;
-        opacity: 40%;
+        opacity: 60%;
         position: absolute;
         top: 10px;
 
@@ -100,12 +100,7 @@
 
 .lunbo_nav {
     li {
-        &:hover {
-            .fu_nav {
-                display: block;
-                transition: all 2s ease .5s;
-            }
-        }
+        
         &:hover.current{
                 background-color: #ff6767;
         }
