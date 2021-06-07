@@ -94,6 +94,46 @@ html .clearfix {
     position: absolute;
     right: 0px; }
 
+.lunbo .wrap {
+  width: 990px;
+  height: 360px;
+  position: relative;
+  overflow: hidden; }
+  .lunbo .wrap .navs {
+    width: 6930px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -990px; }
+    .lunbo .wrap .navs li {
+      width: 990px;
+      height: 100%;
+      float: left; }
+      .lunbo .wrap .navs li img {
+        width: 100%;
+        height: 100%; }
+  .lunbo .wrap #bots {
+    display: inline-block;
+    width: 990px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.3);
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0; }
+    .lunbo .wrap #bots li {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: #cccccc;
+      position: relative;
+      left: 445px;
+      top: 10px;
+      margin-left: 10px;
+      float: left; }
+    .lunbo .wrap #bots .active {
+      background-color: red; }
+
 .lunbo {
   padding: 10px 0;
   position: relative; }
@@ -145,12 +185,12 @@ html .clearfix {
 .tl .dis {
   background-color: #eeeeee;
   margin: 10px 0 0;
-  padding: 15px 0;
+  padding: 15px 10px;
   box-sizing: border-box; }
 
 .tl_content {
   width: 303px;
-  margin-left: 21px;
+  margin-left: 20px;
   float: left; }
   .tl_content .title {
     font-size: 20px;
